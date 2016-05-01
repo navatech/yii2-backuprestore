@@ -1,5 +1,5 @@
 {
-    "name": "open-ecommerce/yii2-backuprestore",
+    "name": "navatech/yii2-backuprestore",
     "description": "Database Backup and Restore functionality",
     "type": "yii2-extension",
     "keywords": ["yii2","Database", "Backup","Restore"],
@@ -11,11 +11,14 @@
         }
     ],
     "require": {
-        "yiisoft/yii2": "*"
+        "yiisoft/yii2": "*",
+		"yiisoft/yii2-bootstrap" : "*",
+		"yiisoft/yii2-swiftmailer" : "*",
+		"kartik-v/yii2-grid" : "@dev"
     },
     "autoload": {
         "psr-4": {
-            "oe\\modules\\backuprestore\\": ""
+            "navatech\\backuprestore\\": "src/"
         }
     }
 }
